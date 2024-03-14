@@ -45,8 +45,8 @@ app.component('product-display', {
     </div>`,
     data() {
       return {
-          product: 'Figure',
-          brand: 'LEGO STARWARS',
+          product: 'STARWARS',
+          brand: 'LEGO',
           selectedVariant: 0,
           details: ['Condition: NEW', 'Brand: LEGO', 'Build Your Empire'],
           variants: [

@@ -61,7 +61,7 @@ body {
   
   img {
     border: 2px solid #d8d8d8;
-    width: 70%;
+    width: 60%;
     margin: 40px;
     padding: 15px;
     -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
@@ -107,8 +107,8 @@ body {
   
   .product-image,
   .product-info {
-    width: 50%;
-  }
+    width: 40%;
+  }  
   
   .review-form {
     display: flex;
