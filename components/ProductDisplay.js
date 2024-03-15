@@ -9,12 +9,18 @@ app.component('product-display', {
     /*html*/
     `<div class="product-display">
       <div class="product-container">
+      <div class="row">
+      <div class="col-1"></div>
+      <div class="col-5">
         <div class="product-image">
           <img v-bind:src="image">
         </div>
+        </div>
+       
+        <div class="col-6">
         <div class="product-info">
           <h1>{{ title }}</h1>
-  
+ 
           <p v-if="inStock">In Stock</p>
           <p v-else>Out of Stock</p>
   
@@ -22,22 +28,26 @@ app.component('product-display', {
           <ul>
             <li v-for="detail in details">{{ detail }}</li>
           </ul>
-  
           <div 
-            v-for="(variant, index) in variants" 
-            :key="variant.id" 
-            @mouseover="updateVariant(index)" 
-            class="color-circle" 
-            :style="{ backgroundColor: variant.color }">
-          </div>
-          
-          <button 
+          v-for="(variant, index) in variants" 
+          :key="variant.id" 
+          @mouseover="updateVariant(index)" 
+          class="color-circle" 
+          :style="{ backgroundColor: variant.color }">
+        </div>
+        <button 
             class="button" 
             :class="{ disabledButton: !inStock }" 
             :disabled="!inStock" 
             v-on:click="addToCart">
             Add to Cart
           </button>
+</div>
+</div>
+</div>
+</div>
+
+
         </div>
       </div>
       <review-list v-if="reviews.length" :reviews="reviews"></review-list>
