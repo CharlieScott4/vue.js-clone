@@ -58,11 +58,11 @@ app.component('product-display', {
           product: 'STARWARS',
           brand: 'LEGO',
           selectedVariant: 0,
-          details: ['Condition: NEW', 'Brand: LEGO', 'Build Your Empire'],
+          details: ['Condition: NEW', 'Brand: LEGO', 'Build Your Collection'],
           variants: [
             { id: 2234, color: 'red', image: './assets/images/vader.jpg', quantity: 50 },
-            { id: 2235, color: 'green', image: './assets/images/boba.jpg', quantity: 50 },
-            { id: 2236, color: 'white', image: './assets/images/storm.jpg', quantity: 50 },
+            { id: 2235, color: 'green', image: './assets/images/yoda.jpg', quantity: 50 },
+            { id: 2236, color: 'blue', image: './assets/images/obi2.webp', quantity: 50 },
         ],
           
           reviews: []
