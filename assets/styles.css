@@ -54,7 +54,7 @@ body {
   }
   
   h3 {
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 20px;
     padding-left: 15px;
   color:#1c1c1c
@@ -123,21 +123,28 @@ body {
     -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+    border-radius: 5px;
   }
   
   .review-container {
+    float: right;
     width: 425px;
     padding: 20px;
     background-color: white;
     -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
     box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
-    margin-left: 40px;
+    margin-right: 700px;
+    margin-top: 38px;
     border: 2px solid #d8d8d8;
+    border-radius: 5px;
   }
   
   .review-container li {
     margin-bottom: 30px;
+    font-weight: bolder;
+    color: black;
+    
   }
   
   .review-form .button {

@@ -62,7 +62,7 @@ app.component('product-display', {
           variants: [
             { id: 2234, color: 'red', image: './assets/images/vader.jpg', quantity: 50 },
             { id: 2235, color: 'green', image: './assets/images/boba.jpg', quantity: 50 },
-            { id: 2236, color: 'grey', image: './assets/images/storm.jpg', quantity: 50 },
+            { id: 2236, color: 'white', image: './assets/images/storm.jpg', quantity: 50 },
         ],
           
           reviews: []
