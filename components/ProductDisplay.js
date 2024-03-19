@@ -7,7 +7,8 @@ app.component('product-display', {
     },
     template: 
     /*html*/
-    `<div class="product-display">
+    `
+    <div class="product-display">
       <div class="product-container">
       <div class="row">
       <div class="col-1"></div>
@@ -50,8 +51,13 @@ app.component('product-display', {
 
         </div>
       </div>
-      <review-list v-if="reviews.length" :reviews="reviews"></review-list>
+      <div class="row">
+      <div class="col-6">
       <review-form @review-submitted="addReview"></review-form>
+      </div>
+      <div class="col-6">
+      <review-list v-if="reviews.length" :reviews="reviews"></review-list></div>
+      </div>
     </div>`,
     data() {
       return {
